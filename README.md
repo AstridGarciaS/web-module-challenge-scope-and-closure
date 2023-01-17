@@ -61,13 +61,15 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+it enables inner functions to have access to their external scope.
+
 2. Study the following code, then answer the questions below.
 
 ```js
 function personalDice(name){
   return function(){
       // generate random number between 1 and 6
-    const newRoll = Math.floor(Math.random() * 6);
+   // const newRoll = Math.floor(Math.random() * 6);
     console.log(`${name} rolled a ${newRoll}`)
   }
 }
@@ -82,7 +84,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+
 c. What is the lexical scope of `newRoll`? 
 
 
